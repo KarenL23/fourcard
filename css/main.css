@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#dccdb8, #f7f5f4, #fef4e6);
+    font-family: 'Signika', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    object-fit: contain;
+}
+body>h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+body>h2 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+body>p:first-of-type {
+    font-weight: 400;
+    width: 45%;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+    padding: 1rem;
+}
+
+#imag {
+    width: 75vw;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container {
+    background:linear-gradient(#f7f5f4, #c2c5ed );
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: -0.2rem 0.2rem 2rem hsla(240, 1%, 15%, 0.778) , 0.2rem -0.2rem 2rem hsla(240, 1%, 15%, 0.794);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.container picture {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .75rem;
+    background-color: rgb(196, 127, 119);
+}
+
+#prim {
+    grid-row: 2/4;
+    grid-column: 1/2;
+}
+
+#prim::before {
+    background-color: hsl(301, 95%, 50%);
+}
+
+#sec {
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+#sec::before {
+    background-color: hsl(13, 90%, 50%);
+}
+
+#thir {
+    grid-row: 3/5;
+    grid-column: 2/3;
+}
+
+#prim::before {
+    background-color: hsl(32, 85%, 53%);
+}
+
+#four {
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+#four::before {
+    background-color: hsl(258, 58%, 39%);
+}
